@@ -1,7 +1,7 @@
 # LLM Fine-tuning with LLaMA Factory
 
 Efficient fine-tuning is vital for adapting large language models (LLMs) to downstream tasks. LLaMA Factory is an open-source and user-friendly platform that streamlines the training and fine-tuning of large language models (LLMs) and multimodal models. It allows users to customize hundreds of pre-trained models locally with minimal coding. 
-This workshop teaches you how to finetune LLMs using LLaMA Factory on your AMD GPU.
+This workshop teaches you how to fine tune LLMs using LLaMA Factory on your AMD GPU.
 
 ---
 
@@ -10,7 +10,7 @@ This workshop teaches you how to finetune LLMs using LLaMA Factory on your AMD G
 ### Pull the llama factory workshop docker image
 
 The workshop is based on the preinstalled ROCm Pytorch docker image with Ubuntu24.04 + ROCm7.2. Llama factory has been installed successfully in this image as the steps of [LLaMA-Factory Installation](https://llamafactory.readthedocs.io/en/latest/getting_started/installation.html#llama-factory)
-Develops can pull this image from [llama_factory_workshop](https://hub.docker.com/r/nzhangnju/llama_factory_workshop)
+Developers can pull this image from [llama_factory_workshop](https://hub.docker.com/r/nzhangnju/llama_factory_workshop)
  
 NOTE: Suppose it has been done by AMD Remote Machine, Developer could skip this part
 
@@ -48,10 +48,15 @@ when Jupyter notebook is launched successfully,copy and paste the notebook URL t
 
 Open llama-factory-finetuning.ipynb and begin to run the below steps of this workshop.
 
+NOTE: The below steps should be run inside jupyter notebook. 
+
 ### Check Llama factory version 
 
 Download the source code from LLaMA Factory official GitHub repository, and install its dependencies. How to install llama factory can be found at its official document.For this workshop, we have installed it to save the time. You can quickly verify if the installation was successful by using llamafactory-cli version. 
-
+```
+cd /LlamaFactory
+llamafactory-cli version
+```
 ---
 
 ### Run LLaMA Factory Fine-tuning
