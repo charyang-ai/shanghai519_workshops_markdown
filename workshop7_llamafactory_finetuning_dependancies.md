@@ -30,9 +30,12 @@ docker run -itd --rm --device /dev/kfd --device /dev/dri  --privileged=true --gr
 
 ### Attach the workshop docker container 
 
-Developer can attach the running workshop container as the below sample command. How to install llama factory can be found at its official document.For this workshop, we have installed it to save time. You can quickly verify if the installation was successful by using llamafactory-cli version. 
+Developer can attach the running workshop container as the below sample command, and navigate to the llama factory root directory
 ```
 docker attach llamafactory_demo
+```
+How to install llama factory can be found at its official document.For this workshop, we have installed it to save time. You can quickly verify if the installation was successful by using llamafactory-cli version. 
+```
 cd /LlamaFactory
 llamafactory-cli version
 ```
