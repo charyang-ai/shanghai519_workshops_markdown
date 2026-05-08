@@ -19,7 +19,7 @@ By the end of this playbook you will be able to:
 - **Fix a bug** to let your agent learn to fix bug and improve by itself.
 - **Package a skill** to your agent so you can use it in general sessions.
 - **Autonomous Workflows** make it work for you: automatically, every morning, without lifting a finger.
-- **The final challenge** to your agent.
+- **Optional challenges** to your agent.
 
 ## Prerequisites
 
