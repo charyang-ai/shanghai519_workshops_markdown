@@ -149,9 +149,35 @@ This prints the authenticated URL, open it in your browser. You should see the O
 
 **Congratulations — you've built a fully local AI agent stack from scratch.** 
 
----
+The OpenClaw interface will appear and once it says `gateway connected`, it's ready!
+This is where you will chat with your OpenClaw agent whenever you see the 🦞 emoji.
 
----
+#### 🦞 Ask your OpenClaw agent
+
+Send your first message to your OpenClaw agent and get setup! Answer any setup questions your agent asks you and then come back here to learn what happened behind the scenes.
+
+#### 👀 Behind the scenes — what just happened?
+
+Those answers didn't just disappear. The agent's memory, personality, and skills are written in markdown files. You can read them, edit them, and version-control them. The agent wrote them to files in its **workspace**, a folder it reads on every message to remember who you are and how to behave.
+
+The workspace has 8 files that get injected into every session:
+
+```
+~/.openclaw/workspace/
+├── SOUL.md       ← WHO the agent is: values, personality, tone
+├── AGENTS.md     ← HOW it operates: startup rules, memory, red lines
+├── IDENTITY.md   ← WHAT others see: name, emoji, public metadata
+├── USER.md       ← WHO you are: context the agent reads about you
+├── TOOLS.md      ← local environment notes (SSH hosts, device names, etc.)
+├── MEMORY.md     ← long-term curated memory across sessions
+├── HEARTBEAT.md  ← checklist for periodic background checks
+├── BOOTSTRAP.md  ← first-run ritual (deleted after onboarding)
+└── memory/       ← daily session logs (today + yesterday auto-loaded)
+```
+
+**SOUL.md is personality. AGENTS.md is policy.** Every message the agent receives, it re-reads both. Run the next cell to see all three key files at once.
+
+
 ## Section 3: Fix a bug
 
 ### Step 1 - Spot the bug yourself
