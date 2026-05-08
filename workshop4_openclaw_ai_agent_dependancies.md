@@ -106,7 +106,7 @@ echo 'export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$PATH"' >> ~/.bashrc
 
 ### Configure OpenClaw to Use Lemonade
 
-Run OpenClaw's non-interactive onboarding, replacing `YOUR_MODEL_ID` with your Lemonade Model ID. Use the plain name (e.g., `Qwen3.5-9B-GGUF`) for catalog models, or the `user.` prefixed name (e.g., `user.Qwen3.5-9B-GGUF-Q4-K-M`) for custom imported ones:
+Run OpenClaw's non-interactive onboarding. If you want to use some other models, replacing 'Qwen3.6-35B-A3B-GGUF' with your Lemonade Model ID. Use the plain name (e.g., `Qwen3.6-35B-A3B-GGUF`) for catalog models, or the `user.` prefixed name (e.g., `user.Qwen3.6-35B-A3B-GGUF-Q4-K-M`) for custom imported ones:
 
 ```bash
 openclaw onboard \
@@ -114,7 +114,7 @@ openclaw onboard \
   --mode local \
   --auth-choice custom-api-key \
   --custom-base-url "http://127.0.0.1:13305/api/v1" \
-  --custom-model-id "YOUR_MODEL_ID" \
+  --custom-model-id Qwen3.6-35B-A3B-GGUF \
   --custom-provider-id "lemonade" \
   --custom-compatibility "openai" \
   --custom-api-key "lemonade" \
@@ -151,6 +151,11 @@ This prints the authenticated URL, open it in your browser. You should see the O
 
 The OpenClaw interface will appear and once it says `gateway connected`, it's ready!
 This is where you will chat with your OpenClaw agent whenever you see the 🦞 emoji.
+
+#### Configure your OpenClaw
+SETTINGS -> AI & Agents -> Models -> Model Provider Context Tokens & Window (set to 190000)
+<img width="1868" height="1479" alt="image" src="https://github.com/user-attachments/assets/ba754ac3-b176-419c-83bd-eee9f992b735" />
+
 
 #### 🦞 Ask your OpenClaw agent
 
