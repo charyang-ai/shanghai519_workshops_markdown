@@ -24,8 +24,8 @@ By the end of this playbook you will be able to:
 ## Prerequisites
 
 - A PC running **Ubuntu 24.04+** or a compatible Debian-based Linux distribution with `apt-get`
-- At least **12 GB of RAM** (32 GB+ recommended for larger models)
-- **~10–20 GB of free disk space** for model weights
+- At least **32 GB of RAM** (96 GB recommended for larger models)
+- **50+ GB of free disk space** for model weights
 
 
 
