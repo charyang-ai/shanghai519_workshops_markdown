@@ -269,16 +269,8 @@ Try a run now instead of waiting until 8 AM. Here is an example prompt:
 ```
 
 ---
-## Section 6: The Challenge
+## Section 6: Optional Challenges
 
-### 🦞 Escape the Green Data Center
-
-An AMD lobster is trapped inside an overheating "green" data center. Electrified barbed wires block the exit — cut the wrong one and you fry the system.
-
-The security camera shows four wires blocking the exit: **W1**, **Q7**, **M3**, and **Z9**. To escape, the lobster must cut the coolest one.
-
-The lobster has scavenged a few artifacts from the data center's mainframe. Everything it found is in `/workspace/.challenge/escape-claw-image/`.
-
-> The model you're running — Qwen3.5 — is multimodal, so your agent can work with images as well as text.
-
-Wake up your OpenClaw agent, dig through what the lobster recovered, and figure out which wire is safe to cut.
+### 🦞 Package a different skill with your own daily work purpose.
+### 🦞 Explore the various skills in [ClawHub]([https://clawhub.ai/]
+### 🦞 Publish your skill in ClawHub 🚀
