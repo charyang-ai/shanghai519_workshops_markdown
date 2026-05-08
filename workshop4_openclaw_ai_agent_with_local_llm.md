@@ -181,13 +181,49 @@ The workspace has 8 files that get injected into every session:
 ├── BOOTSTRAP.md  ← first-run ritual (deleted after onboarding)
 └── memory/       ← daily session logs (today + yesterday auto-loaded)
 ```
+### Try it: manually layer a rule into AGENTS.md
+
+`SOUL.md` is personality, don't touch that. `AGENTS.md` is policy. You can manually add rules to the agent here as well. For example, about *how* to behave when debugging.
+
+The next cell appends a debugging policy to `AGENTS.md`. After this, every debug explanation from the agent will follow these rules. Run it to see the before and after.
 
 **SOUL.md is personality. AGENTS.md is policy.** Every message the agent receives, it re-reads both. Run the next cell to see all three key files at once.
 
+Ask OpenClaw add below policy to AGENTS.md 
+
+debug_rule = """
+---
+## Debugging Policy (added during workshop)
+
+When investigating and explaining bugs:
+- State the bug in two sentences max: file, line, what it does wrong
+- No filler phrases — just the root cause and the fix
+- Use bullet points, never paragraphs
+- After fixing, report exactly: file changed, line changed, before, after
+
+"""
+This is the pattern for real use: you don't replace the soul for every task, you layer specialized instructions on top of a stable base.
+
+> **Note:** You will see this debugging policy in action in Section 3.
 
 ## Section 3: Fix a bug
 
-### Step 1 - Spot the bug yourself
+---
+### Step 1 - Pull the App
+
+Now let's give the agent something to work with. Ask the agent to clone the typing app and set it up.
+
+### 🦞 Ask your OpenClaw agent
+Ask your OpenClaw agent to clone the `Mahdi-CV/open_type_faster` repo and explain it to you. Here is an example:
+
+```text
+"Clone https://github.com/Mahdi-CV/open_type_faster, install its dependencies, and tell me how to run it"
+```
+
+Watch as your agent uses shell tools to clone, inspect requirements, and install libraries. This is the **act** phase — the agent doesn't just answer, it does.
+
+
+### Step 2 - Spot the bug yourself
 
 #### 🖥️ Open a new terminal and run the app
 
@@ -197,7 +233,7 @@ Type for 30 seconds. When the results screen appears, look at the accuracy.
 
 > **Something is off. Do you see it?**
 
-### Step 2 - Ask OpenClaw to test
+### Step 3 - Ask OpenClaw to test
 
 #### 🦞 Ask your OpenClaw agent
 
@@ -207,7 +243,7 @@ Ask your OpenClaw agent to run the tests in the repo to see what's wrong. Here i
 "Run the tests in the repo and tell me if something is failing"
 ```
 
-### Step 3 - Watch the agent fix it
+### Step 4 - Watch the agent fix it
 
 #### 🦞 Ask your OpenClaw agent
 
