@@ -81,18 +81,22 @@ pip install "reachy-mini[mujoco]"
 
 ## Workshop Steps (for developer)
 
+We have the repo of workshop cloned to ~/ReachyMiniChat and python venv setup in it.
+
 ```bash
 # Terminal 1 — Start the robot simulator
+cd ~/ReachyMiniChat
+source .venv/bin/activate
 export PYGLFW_LIBRARY_VARIANT=x11
 reachy-mini-daemon --sim
 
 # Terminal 2 — Activate environment
-cd ReachyMiniChat
+cd ~/ReachyMiniChat
 source .venv/bin/activate
-pip install -r requirements.txt
+```
 
-# Verify Ollama is running
-curl http://localhost:11434/api/tags
+# verfiy the ollama servic
+ollama run qwen3:0.6b "hi"
 ```
 
 > **Tip:** Every script supports `--help`. Run `python emo_vX.py --help` to see available flags without launching the full pipeline.
