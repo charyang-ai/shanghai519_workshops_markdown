@@ -189,10 +189,11 @@ The next cell appends a debugging policy to `AGENTS.md`. After this, every debug
 
 **SOUL.md is personality. AGENTS.md is policy.** Every message the agent receives, it re-reads both. Run the next cell to see all three key files at once.
 
-Ask OpenClaw add below policy to AGENTS.md 
+Ask OpenClaw add below 'debug rule' policy to AGENTS.md 
 
-debug_rule = """
----
+```text
+Append below 'debug rule' policy to AGENTS.md
+
 ## Debugging Policy (added during workshop)
 
 When investigating and explaining bugs:
@@ -200,8 +201,7 @@ When investigating and explaining bugs:
 - No filler phrases — just the root cause and the fix
 - Use bullet points, never paragraphs
 - After fixing, report exactly: file changed, line changed, before, after
-
-"""
+```
 This is the pattern for real use: you don't replace the soul for every task, you layer specialized instructions on top of a stable base.
 
 > **Note:** You will see this debugging policy in action in Section 3.
