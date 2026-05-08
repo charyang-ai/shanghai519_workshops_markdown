@@ -1,4 +1,4 @@
-# Run OpenClaw with Lemonade Server as the backend
+# Run OpenClaw with Lemonade Local LLM in AMD Ryzen AI Device
 
 ## Overview
 
