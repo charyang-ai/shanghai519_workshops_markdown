@@ -154,8 +154,10 @@ This is where you will chat with your OpenClaw agent whenever you see the 🦞 e
 
 #### Configure your OpenClaw
 SETTINGS -> AI & Agents -> Models -> Model Provider Context Tokens & Window (set to 190000)
-<img width="1868" height="1479" alt="image" src="https://github.com/user-attachments/assets/ba754ac3-b176-419c-83bd-eee9f992b735" />
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ba754ac3-b176-419c-83bd-eee9f992b735" width="500" height="300" />
+</p>
 
 #### 🦞 Ask your OpenClaw agent
 
