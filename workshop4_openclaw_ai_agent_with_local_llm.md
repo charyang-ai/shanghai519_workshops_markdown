@@ -74,7 +74,7 @@ The empty `data` array simply means no model weights have been downloaded yet, t
 For agent workloads, a larger context window lets the model keep more of the task history, tool outputs, and reasoning steps in view at once. Set this once after the server is running:
 
 ```bash
-lemonade config set ctx_size=32768
+lemonade config set ctx_size=190000
 ```
 
 This takes effect for newly loaded models. A context of 32768 tokens is a reasonable floor for agent use; increase it if your model and available RAM support it.
