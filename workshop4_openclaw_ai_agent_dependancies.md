@@ -230,40 +230,36 @@ This think → act → observe → repeat loop is what separates an agent from a
 ---
 ## Section 4: Package as a Skill
 
-### Package as a skill
 What the agent just did was a one-off. A **skill** packages that behavior so it can be invoked on any Python project. Skills live in `~/.openclaw/workspace/skills/` as a folder containing a `SKILL.md` file with YAML frontmatter and step-by-step instructions. OpenClaw injects them into the system prompt automatically.
 
-#### 🦞 Ask your OpenClaw agent
+### 🦞 Ask your OpenClaw agent
 Ask your OpenClaw agent to create a python debugger skill. Try sending this to your OpenClaw agent:
 
 ```text
 "Create a skill called pytest-debugger in the skills directory. The SKILL.md must define these steps: 1) Read the tests/ folder to understand what is being tested. 2) Run pytest with verbose output and short tracebacks. 3) For each failing test, read the source file it references. 4) Identify the minimal fix — do not rewrite functions. 5) Apply the fix and re-run pytest to confirm. 6) Report: file changed, line changed, what was wrong, what the fix was."
 ```
 
-When done, run the next cell to see what it wrote.
+The agent should show you where the skills file is saved. You can always ask it again to show you.
 
 That file is all it takes. The skill lives in the workspace, alongside `IDENTITY.md` and `SOUL.md`, and OpenClaw injects it into every session automatically. Any time you ask the agent to debug a Python project, it has these steps to follow.
 
 Skills are just markdown files. You can read them, edit them, and version-control them.
-
 ---
-### Using the Skill
+## Section 5: Using the Skill
 
 The skill is now in the workspace and OpenClaw injects it into the agent's system prompt automatically — no special command needed.
 
-The real value of a skill is applying it to a **completely different codebase**, one the agent has never seen, without writing a single new instruction. There's a broken Python project at `git@github.com:Mahdi-CV/buggy-py-mg.git` — hand it to the agent and watch the skill do the work.
+The real value of a skill is applying it to a **completely different codebase**, one the agent has never seen, without writing a single new instruction. There's a broken Python project at `git@github.com:Mahdi-CV/buggy-py-mg.git`, hand it to the agent and watch the skill do the work.
 
 #### 🦞 Ask your OpenClaw agent
 
 ```text
-Clone git@github.com:Mahdi-CV/buggy-py-mg.git into your workspace, then use the pytest-debugger skill to find and fix whatever is broken.
+"/skill pytest-debugger git@github.com:Mahdi-CV/buggy-py-mg.git"
 ```
 
-The agent will apply the exact same steps it used on `open_type_faster` — no re-explaining, no extra guidance.
-
-
+The agent will apply the exact same steps it used on `open_type_faster', no re-explaining, no extra guidance.
 ---
-## Section 5: Autonomous Workflows
+## Section 6: Adding Another Agent for Autonomous Workflows 
 
 You've built an agent that fixes bugs on demand. Now make it work *for you*: automatically, every morning, without lifting a finger.
 
@@ -276,29 +272,32 @@ What it can do autonomously:
 - Search the web for AI hardware news
 - Write the brief to your workspace
 
-### Step 1 - Delegate (don't mention cron jobs)
+#### 🖥️ Open a new terminal and run the app
+
+```bash
+openclaw agents add morning-brief
+```
+OpenClaw will walk you through setup. **Choose these settings:**
+
+1. **Workspace directory** → `/root/.openclaw/workspace/morning-brief`
+2. **Copy auth profiles from "main"?** → `Yes`
+3. **Configure model/auth for this agent now?** → `No`
+4. **Configure chat channels now?** → `No`
+
+### Step 1 - Switch to your new agent
 
 #### 🦞 Ask your OpenClaw agent
+```text
+"/agent morning-brief"
+```
+
+### Step 2 - Delegate 
 
 The prompt below is purely conversational—no mention of cron, no memory commands. The agent can infer what infrastructure it needs from the prompt:
 
-```text
-"I need to wake up to a personalized tech brief every morning at 8 AM. Check sgl-project/sglang, vllm-project/vllm, huggingface/transformers, ROCm/ROCm, and openclaw/openclaw. I only care about performance updates, GPU features, and breaking changes — skip CI/infrastructure noise and docs-only PRs. Also search the web and add a summary of the latest AI hardware news."
-```
-
-Come back here once the agent confirms it has set up the schedule.
-
-### Step 2 - Peek under the hood
-
-The agent didn't just answer, it acted and wrote things to the disk. Run the next two cells to check it out.
-
-Your filtering rules ("skip CI noise", "only GPU features") are now in `MEMORY.md`. Every future session reads this file at startup. Update your preferences anytime by telling the agent in plain language and it will rewrite its own memory, e.g."actually, include HuggingFace trending models too".
-
 #### 🦞 Ask your OpenClaw agent
-Try a run now instead of waiting until 8 AM. Here is an example prompt:
-
 ```text
-"Run my morning brief right now and show me the output."
+"I need to wake up to a personalized tech brief every morning at 8 AM. Check sgl-project/sglang, vllm-project/vllm, huggingface/transformers, ROCm/ROCm, and openclaw/openclaw. I only care about performance updates, GPU features, and breaking changes, skip CI/infrastructure noise and docs-only PRs. Also search the web and add a summary of the latest AI hardware news."
 ```
 
 ---
