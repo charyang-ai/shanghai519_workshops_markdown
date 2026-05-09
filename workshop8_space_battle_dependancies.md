@@ -36,6 +36,8 @@ The repository is pre-cloned at:
 ```
 
 ### Pre-download model
+Please pre-download 2 models here, one is `Qwen3.5-35B-A3B-NoThinking`, the other is `Qwen3.6-35B-A3B-NoThinking`.
+
 From inside the project folder:
 
 ```bash
@@ -55,10 +57,32 @@ Select a recipe to import and use with Opencode:
   4) Gemma-4-26B-A4B-ThinkingCoder.json
   5) Qwen3.5-35B-A3B-NoThinking.json
   6) Qwen3.5-35B-A3B-ThinkingCoder.json
+  7) Qwen3.6-35B-A3B-NoThinking.json
+  8) Qwen3.6-35B-A3B-ThinkingCoder.json
 ```
 
 **Select option 6 — `Qwen3.5-35B-A3B-ThinkingCoder`. This will help to download model in background**
 
+After option 6 — `Qwen3.5-35B-A3B-ThinkingCoder` finished download, then Ctrl-C to exit and relaunch:
+
+```bash
+lemonade launch opencode
+```
+
+```
+Select a recipe to import and use with Opencode:
+  0) Browse downloaded models
+  1) GLM-4.7-Flash-GGUF-NoThinking.json
+  2) GLM-4.7-Flash-GGUF-ThinkingCoder.json
+  3) Gemma-4-26B-A4B-NoThinking.json
+  4) Gemma-4-26B-A4B-ThinkingCoder.json
+  5) Qwen3.5-35B-A3B-NoThinking.json
+  6) Qwen3.5-35B-A3B-ThinkingCoder.json
+  7) Qwen3.6-35B-A3B-NoThinking.json
+  8) Qwen3.6-35B-A3B-ThinkingCoder.json
+```
+
+**Select option 8 — `Qwen3.6-35B-A3B-ThinkingCoder`. This will help to download model in background**
 
 ## Result / Validation
 
