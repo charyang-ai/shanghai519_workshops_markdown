@@ -214,10 +214,10 @@ This is the pattern for real use: you don't replace the soul for every task, you
 Now let's give the agent something to work with. Ask the agent to clone the typing app and set it up.
 
 ### 🦞 Ask your OpenClaw agent
-Ask your OpenClaw agent to clone the `Mahdi-CV/open_type_faster` repo and explain it to you. Here is an example:
+Ask your OpenClaw agent to clone the `charyang-ai/open_type_faster` repo and explain it to you. Here is an example:
 
 ```text
-"Clone https://github.com/Mahdi-CV/open_type_faster, install its dependencies, and tell me how to run it"
+"Clone https://github.com/charyang-ai/open_type_faster, install its dependencies, and tell me how to run it"
 ```
 
 Watch as your agent uses shell tools to clone, inspect requirements, and install libraries. This is the **act** phase — the agent doesn't just answer, it does.
