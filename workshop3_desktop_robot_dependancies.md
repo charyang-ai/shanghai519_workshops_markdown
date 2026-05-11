@@ -86,13 +86,13 @@ We have the repo of workshop cloned to ~/ReachyMiniChat and python venv setup in
 ```bash
 # Terminal 1 — Start the robot simulator
 cd ~/ReachyMiniChat
-source .venv/bin/activate
+source venv/bin/activate
 export PYGLFW_LIBRARY_VARIANT=x11
 reachy-mini-daemon --sim
 
 # Terminal 2 — Activate environment
 cd ~/ReachyMiniChat
-source .venv/bin/activate
+source venv/bin/activate
 ```
 
 # verfiy the ollama servic
