@@ -59,6 +59,8 @@ lemonade --version
 ```bash
 lemonade list
 ```
+<img width="716" height="295" alt="image" src="https://github.com/user-attachments/assets/052e71b3-d14f-4427-99da-004dadaf3d5a" />
+
 
 ### Step 3 - Serve the Qwen3.6-35B model with local GPU
 
