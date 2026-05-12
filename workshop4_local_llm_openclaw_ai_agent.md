@@ -146,6 +146,7 @@ openclaw onboard \
 ```
 
 This command writes OpenClaw's configuration to `~/.openclaw/openclaw.json`.
+<img width="640" height="155" alt="image" src="https://github.com/user-attachments/assets/3ce8ca93-5671-49ec-bf03-e5a085a5c2b3" />
 
 ### Step 3 - Start the OpenClaw Gateway
 
