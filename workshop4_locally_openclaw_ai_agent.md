@@ -51,7 +51,7 @@ Confirm the install worked:
 ```bash
 lemonade --version
 ```
-<img width="613" height="61" alt="image" src="https://github.com/user-attachments/assets/c6b9d984-9d35-42cf-a1e6-124545004993" />
+<img width="640" height="61" alt="image" src="https://github.com/user-attachments/assets/c6b9d984-9d35-42cf-a1e6-124545004993" />
 
 ### Step 2 - Check the available LLM models list 
 (Qwen3.6 was pre-downloaded, we will use it as our llm backend)
@@ -59,7 +59,7 @@ lemonade --version
 ```bash
 lemonade list
 ```
-<img width="716" height="295" alt="image" src="https://github.com/user-attachments/assets/052e71b3-d14f-4427-99da-004dadaf3d5a" />
+<img width="640" height="295" alt="image" src="https://github.com/user-attachments/assets/052e71b3-d14f-4427-99da-004dadaf3d5a" />
 
 
 ### Step 3 - Serve the Qwen3.6-35B model with local GPU
@@ -67,7 +67,7 @@ lemonade list
 ```bash
 lemonade run Qwen3.6-35B-A3B-GGUF
 ```
-<img width="641" height="153" alt="image" src="https://github.com/user-attachments/assets/63a2f49b-3acb-4c1b-97b0-18dcb2c9a804" />
+<img width="640" height="153" alt="image" src="https://github.com/user-attachments/assets/63a2f49b-3acb-4c1b-97b0-18dcb2c9a804" />
 
 ### Step 4 - Verify the Server is Ready
 
