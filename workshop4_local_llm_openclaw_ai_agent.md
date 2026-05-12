@@ -163,7 +163,7 @@ openclaw dashboard
 ```
 
 This prints the authenticated URL, open it in your browser. You should see the OpenClaw dashboard with your Lemonade model listed as the active backend. **Your agent is ready.**
-
+#### Turn off the brain icon '🧠' to close model thinking. 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/fcadf4de-8421-4f14-a63a-2fa5cbb7c4ec" width="500" height="300" />
 </p>
@@ -177,7 +177,8 @@ This is where you will chat with your OpenClaw agent whenever you see the 🦞 e
 SETTINGS -> AI & Agents -> Models -> Model Provider Context Tokens & Window (set to 65535)
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/cb3721f8-c74a-4798-8eb1-d23bc0ab0dec" />
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/a8a1afdb-cbcd-48f3-824b-45f7762133b8" />
-Turn off the brain icon '🧠' to close model thinking. 
+
+
 ### Step 5 - Start to co-work with your OpenClaw
 
 #### 🦞 Ask your OpenClaw agent
