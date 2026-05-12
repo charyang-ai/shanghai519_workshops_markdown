@@ -52,9 +52,22 @@ Confirm the install worked:
 lemonade --version
 ```
 
+### Check the available LLM models list (Qwen3.6 was pre-downloaded, we will use it as our llm backend)
+
+```bash
+lemonade list
+```
+
+### Serve the Qwen3.6-35B model with local GPU
+
+```bash
+lemonade run Qwen3.6-35B-A3B-GGUF
+```
+
 ### Verify the Server is Ready
 
 ```bash
+sudo apt install curl
 curl -s http://127.0.0.1:13305/api/v1/models
 ```
 
