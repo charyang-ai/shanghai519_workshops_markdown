@@ -1,4 +1,4 @@
-# Run OpenClaw with Lemonade Local LLM in AMD Ryzen AI Device
+# Run OpenClaw with Lemonade Local LLM Serving in AMD Ryzen AI Device
 
 ## Overview
 
