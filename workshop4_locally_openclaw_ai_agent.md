@@ -295,7 +295,8 @@ The agent should show you where the skills file is saved. You can always ask it 
 
 That file is all it takes. The skill lives in the workspace, alongside `IDENTITY.md` and `SOUL.md`, and OpenClaw injects it into every session automatically. Any time you ask the agent to debug a Python project, it has these steps to follow.
 
-Skills are just markdown files. You can read them, edit them, and version-control them.
+* Skills are just markdown files. You can read them, edit them, and version-control them.
+
 ---
 ## Section 5: Using the Skill
 
@@ -309,7 +310,8 @@ The real value of a skill is applying it to a **completely different codebase**,
 "/skill pytest-debugger git@github.com:Mahdi-CV/buggy-py-mg.git"
 ```
 
-The agent will apply the exact same steps it used on `open_type_faster', no re-explaining, no extra guidance.
+* The agent will apply the exact same steps it used on `open_type_faster', no re-explaining, no extra guidance.
+
 ---
 ## Section 6: Adding Another Agent for Autonomous Workflows 
 
