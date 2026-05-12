@@ -59,7 +59,7 @@ lemonade --version
 ```bash
 lemonade list
 ```
-<img width="640" height="295" alt="image" src="https://github.com/user-attachments/assets/052e71b3-d14f-4427-99da-004dadaf3d5a" />
+<img width="640" height="280" alt="image" src="https://github.com/user-attachments/assets/052e71b3-d14f-4427-99da-004dadaf3d5a" />
 
 
 ### Step 3 - Serve the Qwen3.6-35B model with local GPU
@@ -67,7 +67,7 @@ lemonade list
 ```bash
 lemonade run Qwen3.6-35B-A3B-GGUF
 ```
-<img width="640" height="153" alt="image" src="https://github.com/user-attachments/assets/63a2f49b-3acb-4c1b-97b0-18dcb2c9a804" />
+<img width="640" height="145" alt="image" src="https://github.com/user-attachments/assets/63a2f49b-3acb-4c1b-97b0-18dcb2c9a804" />
 
 ### Step 4 - Verify the Server is Ready
 
@@ -146,7 +146,7 @@ openclaw onboard \
 ```
 
 This command writes OpenClaw's configuration to `~/.openclaw/openclaw.json`.
-<img width="640" height="155" alt="image" src="https://github.com/user-attachments/assets/3ce8ca93-5671-49ec-bf03-e5a085a5c2b3" />
+<img width="640" height="140" alt="image" src="https://github.com/user-attachments/assets/3ce8ca93-5671-49ec-bf03-e5a085a5c2b3" />
 
 ### Step 3 - Start the OpenClaw Gateway
 
