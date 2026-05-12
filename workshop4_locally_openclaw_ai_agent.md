@@ -64,6 +64,7 @@ lemonade list
 ```bash
 lemonade run Qwen3.6-35B-A3B-GGUF
 ```
+<img width="641" height="153" alt="image" src="https://github.com/user-attachments/assets/63a2f49b-3acb-4c1b-97b0-18dcb2c9a804" />
 
 ### Step 4 - Verify the Server is Ready
 
