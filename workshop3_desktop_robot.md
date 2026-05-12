@@ -95,7 +95,7 @@ cd ~/ReachyMiniChat
 source venv/bin/activate
 ```
 
-# verfiy the ollama servic
+# verfiy the ollama service
 ollama run qwen3:0.6b "hi"
 ```
 
@@ -103,8 +103,10 @@ ollama run qwen3:0.6b "hi"
 
 ---
 
-NOTE: The workshop at Shanghai AI Dev Day is using remote machine throuhg the VNC login.The ASR/TTS and connect to ReachyMini Robot is invalide.
+NOTE:
+1. The workshop at Shanghai AI Dev Day is using remote machine throuhg the VNC login.The ASR/TTS and connect to ReachyMini Robot is invalide.
 Only the simulation with emo_v1.py, emo_v2.py, emo_v3.py is working within VNC environment.
+2. Keep the reachy-mini-daemon in terminal 1 and run the apps (emo_v*.py) in terminal 2.
 
 ### v1 — High-Intensity Emotion Engine
 
