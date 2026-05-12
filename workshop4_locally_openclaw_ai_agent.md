@@ -51,6 +51,7 @@ Confirm the install worked:
 ```bash
 lemonade --version
 ```
+<img width="613" height="61" alt="image" src="https://github.com/user-attachments/assets/c6b9d984-9d35-42cf-a1e6-124545004993" />
 
 ### Step 2 - Check the available LLM models list 
 (Qwen3.6 was pre-downloaded, we will use it as our llm backend)
