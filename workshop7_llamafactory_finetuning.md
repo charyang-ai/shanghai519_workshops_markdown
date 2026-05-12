@@ -7,7 +7,9 @@ This workshop teaches you how to fine tune LLMs using LLaMA Factory on your AMD 
 
 ## Workshop Setup
 
-### Pull the llama factory workshop docker image
+### docker solution 
+
+#### Pull the llama factory workshop docker image
 
 The workshop is based on the preinstalled ROCm Pytorch docker image with Ubuntu24.04 + ROCm7.2. Llama factory has been installed successfully in this image as the steps of [LLaMA-Factory Installation](https://llamafactory.readthedocs.io/en/latest/getting_started/installation.html#llama-factory)
 Developers can pull this image from [llama_factory_workshop](https://hub.docker.com/r/nzhangnju/llama_factory_workshop)
@@ -20,7 +22,7 @@ docker pull nzhangnju/llama_factory_workshop
 ```
 
 
-### Launch the workshop image 
+#### Launch the workshop image 
 
 Run the below command to launch the workshop image
 
@@ -28,7 +30,7 @@ Run the below command to launch the workshop image
 docker run -itd --rm --device /dev/kfd --device /dev/dri  --privileged=true --group-add video --ipc=host --network=host --shm-size 32G --cap-add=SYS_ADMIN --cap-add=SYS_PTRACE --security-opt seccomp=unconfined  --name=llamafactory_demo nzhangnju/llama_factory_workshop
 ```
 
-### Attach the workshop docker container 
+#### Attach the workshop docker container 
 
 Developer can attach the running workshop container as the below sample command, and navigate to the llama factory root directory
 ```
@@ -39,7 +41,27 @@ How to install llama factory can be found at its official document.For this work
 cd /LlamaFactory
 llamafactory-cli version
 ```
+### non-docker solution 
 
+#### Install Llama Factory
+we install llama factory for this workshop by source codes building: 
+
+```
+git clone --recursive https://github.com/zhangnju/LlamaFactory.git
+cd LlamaFactory
+pip install -e .
+pip install -r requirements/metrics.txt
+```
+#### Download Model To Test
+
+```
+hf download Qwen/Qwen3-4B-Instruct-2507
+```
+
+#### Check llama factory Version 
+```
+llamafactory-cli version
+```
 
 ## Workshop Steps 
 
