@@ -30,7 +30,7 @@ By the end of this playbook you will be able to:
 
 
 ## Section 1: Install and Start Lemonade Server
-### Install Lemonade via the PPA
+### Step 1 - Install Lemonade via the PPA
 
 ```bash
 sudo apt-get install -y software-properties-common
@@ -52,19 +52,20 @@ Confirm the install worked:
 lemonade --version
 ```
 
-### Check the available LLM models list (Qwen3.6 was pre-downloaded, we will use it as our llm backend)
+### Step 2 - Check the available LLM models list 
+(Qwen3.6 was pre-downloaded, we will use it as our llm backend)
 
 ```bash
 lemonade list
 ```
 
-### Serve the Qwen3.6-35B model with local GPU
+### Step 3 - Serve the Qwen3.6-35B model with local GPU
 
 ```bash
 lemonade run Qwen3.6-35B-A3B-GGUF
 ```
 
-### Verify the Server is Ready
+### Step 4 - Verify the Server is Ready
 
 ```bash
 sudo apt install curl
@@ -82,7 +83,7 @@ The empty `data` array simply means no model weights have been downloaded yet, t
 **Congrats — Lemonade Server is live!** You now have a fully local inference server running on your machine. 
 
 ---
-### Configuring Context Size
+### Step 5 - Configuring Context Size
 
 For agent workloads, a larger context window lets the model keep more of the task history, tool outputs, and reasoning steps in view at once. Set this once after the server is running:
 
@@ -96,7 +97,7 @@ This takes effect for newly loaded models. A context of 32768 tokens is a reason
 
 ## Section 2: Install and Configure OpenClaw
 
-### Install OpenClaw
+### Step 1 - Install OpenClaw
 
 ```bash
 curl -fsSL https://openclaw.ai/install.sh | bash -s -- --no-prompt --no-onboard
@@ -117,7 +118,7 @@ To persist this across terminal sessions:
 echo 'export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$PATH"' >> ~/.bashrc
 ```
 
-### Configure OpenClaw to Use Lemonade
+### Step 2 - Configure OpenClaw to Use Lemonade
 
 Run OpenClaw's non-interactive onboarding. If you want to use some other models, replacing 'Qwen3.6-35B-A3B-GGUF' with your Lemonade Model ID. Use the plain name (e.g., `Qwen3.6-35B-A3B-GGUF`) for catalog models, or the `user.` prefixed name (e.g., `user.Qwen3.6-35B-A3B-GGUF-Q4-K-M`) for custom imported ones:
 
@@ -140,7 +141,7 @@ openclaw onboard \
 
 This command writes OpenClaw's configuration to `~/.openclaw/openclaw.json`.
 
-### Start the OpenClaw Gateway
+### Step 3 - Start the OpenClaw Gateway
 
 The gateway is the OpenClaw process that manages the agent loop and serves the dashboard:
 
@@ -165,12 +166,14 @@ This prints the authenticated URL, open it in your browser. You should see the O
 The OpenClaw interface will appear and once it says `gateway connected`, it's ready!
 This is where you will chat with your OpenClaw agent whenever you see the 🦞 emoji.
 
-#### Configure your OpenClaw
+### Step 4 - Configure your OpenClaw
 SETTINGS -> AI & Agents -> Models -> Model Provider Context Tokens & Window (set to 190000)
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ba754ac3-b176-419c-83bd-eee9f992b735" width="500" height="300" />
 </p>
+
+### Step 5 - Start to co-work with your OpenClaw
 
 #### 🦞 Ask your OpenClaw agent
 
@@ -226,7 +229,7 @@ This is the pattern for real use: you don't replace the soul for every task, you
 
 Now let's give the agent something to work with. Ask the agent to clone the typing app and set it up.
 
-### 🦞 Ask your OpenClaw agent
+#### 🦞 Ask your OpenClaw agent
 Ask your OpenClaw agent to clone the `charyang-ai/open_type_faster` repo and explain it to you. Here is an example:
 
 ```text
@@ -281,7 +284,7 @@ This think → act → observe → repeat loop is what separates an agent from a
 
 What the agent just did was a one-off. A **skill** packages that behavior so it can be invoked on any Python project. Skills live in `~/.openclaw/workspace/skills/` as a folder containing a `SKILL.md` file with YAML frontmatter and step-by-step instructions. OpenClaw injects them into the system prompt automatically.
 
-### 🦞 Ask your OpenClaw agent
+#### 🦞 Ask your OpenClaw agent
 Ask your OpenClaw agent to create a python debugger skill. Try sending this to your OpenClaw agent:
 
 ```text
