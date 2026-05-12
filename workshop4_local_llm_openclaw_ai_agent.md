@@ -108,6 +108,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash -s -- --no-prompt --no-onboard
 ```
 
 The `--no-onboard` flag skips the interactive setup wizard, you will configure the model backend manually in the next step, which gives you precise control over which model and server are used.
+<img width="640" height="115" alt="image" src="https://github.com/user-attachments/assets/0cf32d92-7c0b-41ac-84e4-aac7511f8ab3" />
 
 After installation, confirm `openclaw` is on your `PATH`:
 
@@ -115,6 +116,7 @@ After installation, confirm `openclaw` is on your `PATH`:
 export PATH="$HOME/.npm-global/bin:$HOME/.local/bin:$PATH"
 openclaw --version
 ```
+<img width="640" height="85" alt="image" src="https://github.com/user-attachments/assets/4b91692f-12eb-450d-b2da-91be05fa31be" />
 
 To persist this across terminal sessions:
 
