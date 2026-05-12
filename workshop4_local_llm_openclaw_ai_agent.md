@@ -108,7 +108,7 @@ curl -fsSL https://openclaw.ai/install.sh | bash -s -- --no-prompt --no-onboard
 ```
 
 The `--no-onboard` flag skips the interactive setup wizard, you will configure the model backend manually in the next step, which gives you precise control over which model and server are used.
-<img width="640" height="115" alt="image" src="https://github.com/user-attachments/assets/0cf32d92-7c0b-41ac-84e4-aac7511f8ab3" />
+<img width="640" height="100" alt="image" src="https://github.com/user-attachments/assets/0cf32d92-7c0b-41ac-84e4-aac7511f8ab3" />
 
 After installation, confirm `openclaw` is on your `PATH`:
 
@@ -174,12 +174,10 @@ The OpenClaw interface will appear and once it says `gateway connected`, it's re
 This is where you will chat with your OpenClaw agent whenever you see the 🦞 emoji.
 
 ### Step 4 - Configure your OpenClaw
-SETTINGS -> AI & Agents -> Models -> Model Provider Context Tokens & Window (set to 190000)
-
-<p align="center">
-  <img src="https://github.com/user-attachments/assets/ba754ac3-b176-419c-83bd-eee9f992b735" width="500" height="300" />
-</p>
-
+SETTINGS -> AI & Agents -> Models -> Model Provider Context Tokens & Window (set to 65535)
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/cb3721f8-c74a-4798-8eb1-d23bc0ab0dec" />
+<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/a8a1afdb-cbcd-48f3-824b-45f7762133b8" />
+Turn off the brain icon '🧠' to close model thinking. 
 ### Step 5 - Start to co-work with your OpenClaw
 
 #### 🦞 Ask your OpenClaw agent
