@@ -12,13 +12,14 @@ Together, they form a fully local AI agent stack: Lemonade handles model inferen
 
 ## What You'll Learn Today
 
-By the end of this playbook you will be able to:
+By the end of this workshop you will be able to:
 
 - **Install Lemonade Server** and serve a LLM locally.
 - **Install OpenClaw** and **point it at Lemonade Server** as its AI backend.
-- **Fix a bug** to let your agent learn to fix bug and improve by itself.
-- **Package a skill** to your agent so you can use it in general sessions.
-- **Autonomous Workflows (optional)** make it work for you: automatically, every morning, without lifting a finger.
+- **Fix a bug** to let your agent learn to find out the bug and fix it by itself.
+- **Package a skill** turn what the agent just did into a reusable skill that works on any Python project.
+- **Use the skill** prove the skill works by running it on the same project without further guidance.
+- **Autonomous Workflows (optional)** tell the agent to schedule itself and deliver a personalized brief every morning. 
 
 ## Prerequisites
 
