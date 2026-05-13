@@ -311,12 +311,12 @@ That file is all it takes. The skill lives in the workspace, alongside `IDENTITY
 
 The skill is now in the workspace and OpenClaw injects it into the agent's system prompt automatically — no special command needed.
 
-The real value of a skill is applying it to a **completely different codebase**, one the agent has never seen, without writing a single new instruction. There's a broken Python project at `git@github.com:Mahdi-CV/buggy-py-mg.git`, hand it to the agent and watch the skill do the work.
+The real value of a skill is applying it to a **completely different codebase**, one the agent has never seen, without writing a single new instruction. There's a broken Python project at `git@github.com:charyang-ai/buggy-py-mg.git`, hand it to the agent and watch the skill do the work.
 
 #### 🦞 Ask your OpenClaw agent
 
 ```text
-"/skill pytest-debugger git@github.com:Mahdi-CV/buggy-py-mg.git"
+"/skill pytest-debugger git@github.com:charyang-ai/buggy-py-mg.git"
 ```
 
 * The agent will apply the exact same steps it used on `open_type_faster', no re-explaining, no extra guidance.
