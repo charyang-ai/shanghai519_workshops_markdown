@@ -65,7 +65,8 @@ lemonade list
 ### Step 3 - Serve the Qwen3.6-35B model with local GPU
 
 ```bash
-lemonade run Qwen3.6-35B-A3B-GGUF
+lemonade import Qwen3.6-35B-A3B-NoThinking.json
+lemonade run user.Qwen3.6-35B-A3B-NoThinking
 ```
 <img width="640" height="145" alt="image" src="https://github.com/user-attachments/assets/63a2f49b-3acb-4c1b-97b0-18dcb2c9a804" />
 
@@ -134,7 +135,7 @@ openclaw onboard \
   --mode local \
   --auth-choice custom-api-key \
   --custom-base-url "http://127.0.0.1:13305/api/v1" \
-  --custom-model-id Qwen3.6-35B-A3B-GGUF \
+  --custom-model-id user.Qwen3.6-35B-A3B-NoThinking \
   --custom-provider-id "lemonade" \
   --custom-compatibility "openai" \
   --custom-api-key "lemonade" \
@@ -228,6 +229,7 @@ When investigating and explaining bugs:
 This is the pattern for real use: you don't replace the soul for every task, you layer specialized instructions on top of a stable base.
 
 > **Note:** You will see this debugging policy in action in Section 3.
+
 
 ## Section 3: Fix a bug
 
