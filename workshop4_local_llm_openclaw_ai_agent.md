@@ -14,12 +14,11 @@ Together, they form a fully local AI agent stack: Lemonade handles model inferen
 
 By the end of this playbook you will be able to:
 
-- Learn about **Lemonade Server** and raise a API service.
+- **Install Lemonade Server** and serve a LLM locally.
 - **Install OpenClaw** and **point it at Lemonade Server** as its AI backend.
 - **Fix a bug** to let your agent learn to fix bug and improve by itself.
 - **Package a skill** to your agent so you can use it in general sessions.
-- **Autonomous Workflows** make it work for you: automatically, every morning, without lifting a finger.
-- **Optional challenges** to your agent.
+- **Autonomous Workflows (optional)** make it work for you: automatically, every morning, without lifting a finger.
 
 ## Prerequisites
 
@@ -155,8 +154,9 @@ The gateway is the OpenClaw process that manages the agent loop and serves the d
 ```bash
 openclaw gateway run --bind loopback --port 18789
 ```
+**Open a second terminal!**.
 
-To open the dashboard, run this in a second terminal while the gateway is still running:
+To open the dashboard, run this in the **second terminal** while the gateway is still running:
 
 ```bash
 openclaw dashboard
@@ -319,7 +319,7 @@ The real value of a skill is applying it to a **completely different codebase**,
 * The agent will apply the exact same steps it used on `open_type_faster', no re-explaining, no extra guidance.
 
 ---
-## Section 6: Adding Another Agent for Autonomous Workflows 
+## [Optional] Section 6: Adding Another Agent for Autonomous Workflows 
 
 You've built an agent that fixes bugs on demand. Now make it work *for you*: automatically, every morning, without lifting a finger.
 
@@ -361,7 +361,7 @@ The prompt below is purely conversational—no mention of cron, no memory comman
 ```
 
 ---
-## Section 6: Optional Challenges
+## What is Next?
 
 ### 🦞 Package a different skill with your own daily work purpose.
 ### 🦞 Explore the various skills in [ClawHub]([https://clawhub.ai/]
