@@ -176,8 +176,7 @@ The OpenClaw interface will appear and once it says `gateway connected`, it's re
 This is where you will chat with your OpenClaw agent whenever you see the 🦞 emoji.
 
 ### Step 4 - Configure your OpenClaw
-SETTINGS -> AI & Agents -> Models -> Model Provider Context Tokens & Window (set to 65535)
-<img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/cb3721f8-c74a-4798-8eb1-d23bc0ab0dec" />
+SETTINGS -> AI & Agents -> Models -> Context Tokens & Window (set to 65535)
 <img width="400" height="400" alt="image" src="https://github.com/user-attachments/assets/a8a1afdb-cbcd-48f3-824b-45f7762133b8" />
 
 
@@ -316,7 +315,7 @@ The real value of a skill is applying it to a **completely different codebase**,
 #### 🦞 Ask your OpenClaw agent
 
 ```text
-"/skill pytest-debugger git@github.com:charyang-ai/buggy-py-mg.git"
+"/skill pytest-debugger https://github.com/charyang-ai/buggy-py-mg"
 ```
 
 * The agent will apply the exact same steps it used on `open_type_faster', no re-explaining, no extra guidance.
